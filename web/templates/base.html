@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ the_title }}</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='main.css') }}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(window).scroll(function(){
+                if ($(document).scrollTop() > 10) {
+                    $('nav').addClass('shrink');
+                } else {
+                    $('nav').removeClass('shrink');
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href='/entry'>Szukaj literek</a></li>
+                    <li><a href='/log'>Logi</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class='main'>
+        <h2>{{ the_title }}</h2>
+        {% block body %}
+
+        {% endblock %}
+        </section>
+    </body>
+</html>

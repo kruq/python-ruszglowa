@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block body %}
+<form method='POST' action='/search4'>
+    <p>Użyj tego formularza, aby określić parametry wyszukiwania</p>
+    <table>
+        <tr><td>Fraza:</td><td><input name='phrase' type='text' width='60'/></td></tr>
+        <tr><td>Litery:</td><td><input name='letters' type='text' value='aeiou'/></td></tr>
+    </table>
+    <p><input value='Go!' type='submit'/></p>
+</form>
+{% endblock %}

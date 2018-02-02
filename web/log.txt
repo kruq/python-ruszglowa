@@ -1,0 +1,2 @@
+testowy string|aeiou|o,e,i
+testowy string|aeiou|o,e,i

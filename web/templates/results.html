@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block body %}
+<p>Podałeś następujące dane:</p>
+<table>
+    <tr><td>Fraza:</td><td>{{ the_phrase }}</td></tr>
+    <tr><td>Litery:</td><td>{{ the_letters }}</td></tr>
+</table>
+<p>We frazie "{{ the_phrase }}" znaleziono spośród liter "{{ the_letters }}" znajdują się: "{{ the_results }}" </p>
+{% endblock %}
