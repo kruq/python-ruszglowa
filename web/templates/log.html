@@ -3,11 +3,11 @@
 <table>
     <a href="/log/clear">Wyszyść logi</a>
     <thead>
-        <tr><td>Fraza</td><td>Szukane litery</td><td>Rezultat</td></tr>
+        <tr><td>Lp</td><td>Fraza</td><td>Szukane litery</td><td>Rezultat</td><td>Przeglądarka</td><td>Data</td></tr>
     </thead>
     <tbody>
     {% for log in logs %}
-    <tr><td>{{log[0]}}</td><td>{{log[1]}}</td><td>{{log[2]}}</td></tr>
+    <tr><td>{{log[0]}}</td><td>{{log[1]}}</td><td>{{log[2]}}</td><td>{{log[3]}}</td><td>{{log[4]}}</td><td>{{log[5]}}</td></tr>
     {% endfor %}
     </tbody>
 </table>
